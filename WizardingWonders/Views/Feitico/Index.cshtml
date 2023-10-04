@@ -17,6 +17,17 @@
     </div>
 
     <alert mensagem="@TempData["msg"]"></alert>
+    
+    <div class="row mt-4">
+            <div class="col-md-6">
+                <form asp-action="Buscar" method="get">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar por nome do feitiço" name="termoBuscado">
+                        <button class="btn btn-slate-blue" type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     <table class="table">
         <tr>

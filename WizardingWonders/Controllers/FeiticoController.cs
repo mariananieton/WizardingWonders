@@ -54,4 +54,21 @@ public class FeiticoController : Controller
         return View(feitico);
     }
     
+    [HttpGet]
+    public IActionResult Buscar(string termoBuscado)
+    {
+        List<Feitico> feiticos;
+        if (!string.IsNullOrEmpty(termoBuscado))
+        {
+            feiticos = _lista
+                .Where(f => f.Nome.Contains(termoBuscado, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+        else
+        {
+            feiticos = _lista;
+        }
+
+        return View("Index", feiticos);
+    }
 }
