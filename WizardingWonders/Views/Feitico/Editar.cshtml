@@ -1,0 +1,16 @@
+﻿@model Feitico
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Edição de Feitiços</h1>
+
+<a asp-action="Index">Livro de Feitiços</a>
+
+<form asp-action="editar">
+    
+    <partial name="_Form" />
+
+    <confirm texto="Editar"></confirm>    
+</form>

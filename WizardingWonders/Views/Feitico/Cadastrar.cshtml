@@ -1,0 +1,18 @@
+﻿@model Feitico
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastro de Feitiço</h1>
+
+<alert mensagem="@TempData["msg"]"></alert>
+
+<a asp-action="Index">Livro de Feitiços</a>
+
+<form asp-action="cadastrar">
+    
+    <partial name="_Form" />
+
+    <confirm></confirm>
+</form>
