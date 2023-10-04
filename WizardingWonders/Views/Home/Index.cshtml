@@ -2,11 +2,30 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <a asp-action="cadastrar" asp-controller="feitico">
-        Cadastro de Feitiço
-    </a>
-    <a asp-action="Index" asp-controller="feitico">
-        Livro de Feitiços
-    </a>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1>Wizarding Wonders - O Seu Livro de Feitiços Online!</h1>
+            <p>Nossa aplicação é um portal para todos os bruxos e bruxas que desejam explorar e catalogar os
+                segredos do mundo da magia.</p>
+            <p>Você pode manter seu próprio Livro de Feitiços, exatamente como os bruxos e bruxas de Hogwarts. Registre
+                os feitiços que você aprendeu, descobriu ou inventou ao longo de sua jornada mágica. Cada feitiço é uma
+                página de seu próprio grimório virtual, onde você pode incluir todos os detalhes, desde o nome,
+                palavras mágicas, se uma varinha é necessária, até os resultados e efeitos misteriosos.</p>
+            <p>E não se preocupe com feitiços perdidos ou páginas amareladas; seu Livro de Feitiços estará sempre
+                disponível online, seguro e protegido com as melhores magias de segurança.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4 offset-md-2">
+            <a asp-action="cadastrar" class="btn btn-indigo btn-lg btn-block" asp-controller="feitico">
+                Cadastro de Feitiço
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a asp-action="Index" class="btn btn-indigo btn-lg btn-block" asp-controller="feitico">
+                Livro de Feitiços
+            </a>
+        </div>
+    </div>
 </div>

@@ -4,13 +4,22 @@
     ViewData["Title"] = "Editar";
 }
 
-<h1>Edição de Feitiços</h1>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Edição de Feitiços</h1>
+        </div>
+        <div class="col-md-6">
+            <a asp-action="Index" class="btn btn-indigo btn-lg btn-block offset-md-7" asp-controller="feitico">
+                Ir para o Livro de Feitiços
+            </a>
+        </div>
+    </div>
 
-<a asp-action="Index">Livro de Feitiços</a>
+    <form asp-action="editar">
 
-<form asp-action="editar">
-    
-    <partial name="_Form" />
+        <partial name="_Form"/>
 
-    <confirm texto="Editar"></confirm>    
-</form>
+        <confirm texto="Editar"></confirm>
+    </form>
+</div>

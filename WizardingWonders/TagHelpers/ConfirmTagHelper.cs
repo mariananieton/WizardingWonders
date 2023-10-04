@@ -9,7 +9,7 @@ namespace WizardingWonders.TagHelpers
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "button";
-            output.Attributes.SetAttribute("class", "btn btn-primary");
+            output.Attributes.SetAttribute("class", "btn btn-indigo");
             output.Content.SetContent(string.IsNullOrEmpty(Texto)?"Cadastrar":Texto);
         }
     }

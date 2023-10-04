@@ -46,3 +46,7 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
+.bg-indigo {
+  background-color: #191970;
+}

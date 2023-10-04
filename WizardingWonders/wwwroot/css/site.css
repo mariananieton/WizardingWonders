@@ -19,4 +19,54 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #483D8B; 
+  color: #fff; 
+}
+
+.btn-indigo {
+  background-color: #191970; 
+  border-color: #191970; 
+  color: #fff; 
+}
+
+.btn-indigo:hover {
+  background-color: #4B0082;
+  border-color: #4B0082; 
+  color: #fff; 
+}
+
+.table th {
+  color: white;
+}
+
+.table td {
+  color: white;
+}
+
+.btn-magenta {
+  background-color: #8B008B;
+  border-color: #8B008B;
+  color: #fff;
+}
+
+.btn-magenta:hover {
+  background-color: #FF00FF;
+  border-color: #FF00FF;
+  color: #fff;
+}
+
+.btn-slate-blue {
+  background-color: #6A5ACD;
+  border-color: #6A5ACD;
+  color: #fff;
+}
+
+.btn-slate-blue:hover {
+  background-color: #836FFF;
+  border-color: #836FFF;
+  color: #fff;
+}
+
+.modal-bg {
+  background-color: #191970;
 }
